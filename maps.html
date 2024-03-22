@@ -1,0 +1,25 @@
+User
+this is the HTML code:
+<html>
+<head>
+    <title>Google Maps Draw Polygon Get Coordinates</title>
+</head>
+
+<body>
+    <h2>Google Maps Draw Polygon Get Coordinates</h2>
+    <div>
+        <label for="location">Search Location:</label>
+        <input type="text" id="location" placeholder="Enter location">
+        <button onclick="searchLocation()">Search</button>
+    </div>
+    <div>
+        <button onclick="downloadCoordinates()">Download Coordinates</button>
+    </div>
+    <div id="map-canvas" style="height: 400px; width: 700px"></div>
+    <h4>Updated Coordinates (X,Y)</h4>
+    <div id="info" style="position:absolute; color:red; font-family: Arial; height:200px; font-size: 12px;"></div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=drawing,places"></script>
+    <script src="drawMap.js"></script>
+</body>
+
+</html>
